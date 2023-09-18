@@ -1,0 +1,475 @@
+:root {
+  --background: ##d8e3fa;
+  --gray: #eaeaec;
+  --primary: #29283f;
+  --primary-violet: #7370f4;
+  --dark-spring-green: #177245;
+  --green: #94c496;
+}
+
+body {
+  background-color: var(--background);
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.side-nav-app {
+  flex-grow: 1;
+  width: calc(100% - 85%);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  padding-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.side-nav-app a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #29283f;
+  display: block;
+  /* border: 1px solid #29283f; */
+}
+
+.side-nav-app a:hover {
+  color: var(--green);
+}
+.side-nav-app-header-logo {
+  margin-bottom: 20%;
+}
+.side-nav-app-header-logo .logo {
+  width: 20%;
+  mix-blend-mode: multiply;
+}
+.side-nav-app-body-menu li {
+  margin-bottom: 15px;
+}
+.side-nav-app-body-menu li img {
+  width: 30%;
+  mix-blend-mode: multiply;
+}
+
+.top-nav {
+  display: flex;
+  margin-right: 221px;
+}
+
+.top-nav > li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.top-nav > li > a > img {
+  width: 20%;
+}
+
+/* Style The Dropdown Button */
+.drop-btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--background);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #94c496;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #94c496;
+  z-index: 1;
+  border-radius: 5px;
+  top: -105px;
+  left: 145px;
+  width: 450px;
+  height: 100vh;
+  z-index: 1;
+}
+
+.nav-menu li {
+  margin-left: 30px;
+  margin-bottom: 1px;
+  text-align: start;
+  list-style-image: url(../img/vps.png);
+}
+.nav-menu > h3 {
+  text-align: start;
+  margin: 20px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark-spring-green);
+}
+.nav-menu li a {
+  color: black;
+  font-size: medium;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .nav-menu {
+  display: block;
+}
+
+.main-app {
+  margin-left: 5px;
+  padding: 0px 10px;
+  flex-grow: 5;
+  overflow: auto;
+}
+
+.main-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 100%;
+  border-bottom: 5px solid var(--dark-spring-green);
+  position: relative;
+}
+
+.container-banner {
+  width: 100%;
+  height: 500px;
+  border: 0.01px solid var(--dark-spring-green);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-banner-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.container-banner-content-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--dark-spring-green);
+  margin-bottom: 30px;
+}
+
+.container-banner-content-body {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
+.container-banner-content-footer {
+  width: 150px;
+  height: 40px;
+  background-color: var(--green);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-chitiet {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.container-banner-content-footer:hover {
+  background-color: var(--dark-spring-green);
+  transition: 0.5s;
+}
+
+.container-banner-img img {
+  width: 450px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px black;
+}
+
+.container-site-section {
+  margin-top: 20px;
+}
+
+.site-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.site-section-content .col-lg {
+  margin: 10px 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid var(--dark-spring-green);
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.col-lg:hover {
+  box-shadow: 0 0 20px var(--green);
+  margin-top: -10px;
+}
+
+.site-section-content-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.site-section-content-item-img > img {
+  width: 100px;
+}
+
+.site-section-content-item-title {
+  margin-top: 10px;
+}
+
+.container-content {
+  margin-top: 20px;
+  width: 100%;
+  height: 50vh;
+}
+
+.container__content_card {
+  padding: 20px;
+}
+
+.container-content-header h2 {
+  font-size: 35px;
+}
+.container-content-header p {
+  margin-top: 20px;
+}
+
+.container-content-body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-content-body-item {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.container-content-body-item-img img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.container-content-body-item-content p {
+  font-size: 15px;
+  padding-top: 5px;
+  color: gray;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.footer-container-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer-container-item img {
+  width: 70px;
+  background-color: #eaeaec;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.footer-container-item_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #94c496;
+  z-index: 1;
+  border-radius: 10px;
+  width: 450px;
+  height: 500px;
+  z-index: 1;
+  right: 80px;
+  bottom: 5px;
+}
+
+.chat_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.chat_container-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat_container-header-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark-spring-green);
+  margin-bottom: 20px;
+}
+
+.chat_container-body_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.chat_container-body_header h4 {
+  font-size: 15px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.chat_container-body_form {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat_container-body_form input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  background-color: var(--dark-spring-green);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--green);
+  transition: 0.5s;
+}
+
+.chat_container-body_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px var(--dark-spring-green);
+}
+
+.chat_container-body_content_header h4 {
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.chat_container-body_content_body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.social {
+  flex: 0 0 47.999%;
+  margin: 2px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social img {
+  width: auto;
+  height: 50%;
+}
